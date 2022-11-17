@@ -1,8 +1,10 @@
-install.packages(c('ggplot2','GGally','randomForest','caret','naivebayes',
-            'dplyr','caret','ROCR','psych','gt','kknn','Rcpp'),dependencies = T)
-library(kknn)
+install.packages(c('GGally','randomForest','caret','naivebayes',
+            'caret','ROCR','psych'))
+            
 install.packages("tidyverse")
 install.packages("rmarkdown")
+install.packages("/home/jovyan/kknn_1.3.1.tar.gz", repos = NULL, type = "source")
+
 
 
 #install.packages("githubinstall")
