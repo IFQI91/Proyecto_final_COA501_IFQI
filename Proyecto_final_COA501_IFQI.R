@@ -31,6 +31,35 @@ base2<- na.omit(base[,c(14,2,5,6,7,18,19,22,24,28:30)])
 pca <- prcomp(base2[,-c(1,2)], scale = T, center=T)
 summary(pca)
 
+#NMDS
+library(vegan)
+nmds <- metaMDS(base2[,-c(1,2)]) #Quitar las cualitativas
+nmds #De preferencia Stress <0.20
+#stress 0.06
+
+
+ordiplot(nmds)
+
+plot(nmds, disp="sites", type="t")
+base2$Anio <- as.factor(base2$Anio)
+base2$Bloque <- as.factor(base2$Bloque)
+ordihull(nmds, base2$Anio, col=3:12, draw = "polygon") #Escoger columna para formar poligono
+
+
+#con la libreria ggord
+library(ggord) 
+ggord(nmds, base$Sitios,ellipse=T)
+
+
+library(ggpubr)
+
+colnames(mds) <- c("Dim.1", "Dim.2")
+ggscatter(mds, x = "Dim.1", y = "Dim.2", 
+          label = rownames(base2),
+          size = 1,
+          repel = TRUE)
+
+
 par(mfrow = c(1,3))
 plot(pca)
 biplot(pca, main="PCA biplot")
