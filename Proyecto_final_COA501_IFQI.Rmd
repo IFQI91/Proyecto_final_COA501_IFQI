@@ -3,11 +3,6 @@ title: '**Proyecto final**'
 author: \textcolor[HTML]{08106E}{Iván F. Quiroz Ibáñez}^[IFIT-CP, quiroz.ivan@colpos.mx]
 date: "`r format(Sys.time(), '%d % de %B % de %Y')`"
 output:
-  pdf_document:
-    includes:
-      in_header: header.tex
-  word_document:
-    toc: no
   html_document:
     toc: yes
     toc_float: yes
@@ -15,6 +10,11 @@ output:
     theme: journal
     fig_caption: yes
     code_folding: show
+  word_document:
+    toc: no
+  pdf_document:
+    includes:
+      in_header: header.tex
 language: es-MX
 subtitle: COA-501 Herramientas de cómputo para investigadores (R y Python)
 ---
