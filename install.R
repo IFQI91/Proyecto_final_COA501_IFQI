@@ -1,2 +1,4 @@
 install.packages(c('ggplot2','GGally','randomForest','caret','naivebayes',
-            'dplyr','caret','kknn','ROCR','psych'),dependencies = T)
+            'dplyr','caret','ROCR','psych','gt'),dependencies = T)
+
+devtools::install_github("KlausVigo/kknn")
