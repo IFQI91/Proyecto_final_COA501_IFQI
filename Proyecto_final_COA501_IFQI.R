@@ -7,59 +7,61 @@ rm(list = ls())
 
 #directorios
 dir()
-dir.create(file.path("Figuras","subcarpeta"), recursive = T)
-dir.create(file.path("Bases","subcarpeta"), recursive = T)
+#dir.create("Figuras")
+#dir.create("Bases")
 
 
 
 base <- read.csv("ABCPE_MIXTO_B1_R_coordenadas.csv")
+write.csv(base,"./Bases/base.csv")
 summary(base)
 str(base)
 
 #matriz de diagramas de dispersion
-pairs(base[,c(5,6,7,9,10,12,18,19,22,24,28:30,32)])
+png("./Figuras/plot1.png", width=16, height=7, units = 'in', res=300)
+pairs(base[,c(5,6,7,9,10,12,18,19,22,24,28:30,32)],col="blue",pch=23)
+dev.off()
 
 library(GGally)
-ggpairs(base[,c(5,6,7,18,19,22,24,28:30)], 
-        title="correlograma con ggpairs") 
 
+plot2 <- ggpairs(base[,c(5,6,7,18,19,22,24,28:30)], 
+        title="correlograma con ggpairs")
+plot2
+
+ggsave(plot=plot2,"./Figuras/plot2.png", width=16, height=7, units = 'in',dpi=300)
+
+png("./Figuras/plot3.png", width=16, height=7.5, units = 'in', res=300)
 psych::pairs.panels(base[,c(5,6,7,18,19,22,24,28:30)])
+dev.off()
 
-base2<- na.omit(base[,c(14,2,5,6,7,18,19,22,24,28:30)])
+base.pc<- na.omit(base[,c(14,2,5,6,7,18,19,22,24,28:30)])
+write.csv(base.pc,"./Bases/base.pc.csv")
 
 #Análisis de componentes principales 
-pca <- prcomp(base2[,-c(1,2)], scale = T, center=T)
+pca <- prcomp(base.pc[,-c(1,2)], scale = T, center=T)
 summary(pca)
 
 #NMDS
 library(vegan)
-nmds <- metaMDS(base2[,-c(1,2)]) #Quitar las cualitativas
+nmds <- metaMDS(base.pc[,-c(1,2)]) #Quitar las cualitativas
 nmds #De preferencia Stress <0.20
 #stress 0.06
 
-
+png("./Figuras/plot.nmds.png", width=16, height=9, units = 'in', res=300)
 ordiplot(nmds)
-
 plot(nmds, disp="sites", type="t")
-base2$Anio <- as.factor(base2$Anio)
-base2$Bloque <- as.factor(base2$Bloque)
-ordihull(nmds, base2$Anio, col=3:12, draw = "polygon") #Escoger columna para formar poligono
-
+base.pc$Anio <- as.factor(base.pc$Anio)
+base.pc$Bloque <- as.factor(base.pc$Bloque)
+ordihull(nmds, base.pc$Anio, col=3:12, draw = "polygon") #Escoger columna para formar poligono
+dev.off()
 
 #con la libreria ggord
 library(ggord) 
-ggord(nmds, base$Sitios,ellipse=T)
+plot.nmds.ggord <-ggord(nmds, base.pc$Anio,ellipse=T)
+plot.nmds.ggord
+ggsave(plot=plot.nmds.ggord,"./Figuras/plot.nmds.ggord.png", width = 16, height=9,dpi=300)
 
-
-library(ggpubr)
-
-colnames(mds) <- c("Dim.1", "Dim.2")
-ggscatter(mds, x = "Dim.1", y = "Dim.2", 
-          label = rownames(base2),
-          size = 1,
-          repel = TRUE)
-
-
+png("./Figuras/plot5.png", width=16, height=7, units = 'in', res=300)
 par(mfrow = c(1,3))
 plot(pca)
 biplot(pca, main="PCA biplot")
@@ -79,11 +81,11 @@ dev.off()
 
 #biplot
 library(ggplot2)
-plt <- ggplot(base2, aes(x = pca$x[,2], y = pca$x[,1], colour = as.factor(base2$Anio))) +
+plot4 <- ggplot(base.pc, aes(x = pca$x[,2], y = pca$x[,1], colour = as.factor(base.pc$Anio))) +
   geom_point(size=3) +
   ggtitle("PCA por Edad del follaje")
-plt
-
+plot4
+ggsave(plot=plot4,"./Figuras/plot4.png", width = 16, height=9,dpi=300)
 
   ###########################Random Forest################################
 
@@ -94,7 +96,7 @@ library(caret)
 str(base)
 
 base_rf <- na.omit(base[,c(2,5,6,7,18,19,22,24,28:30)])
-
+write.csv(base,"./Bases/base_rf.csv")
 base_rf$Bloque <- as.factor(base_rf$Bloque)
 table(base_rf$Bloque)
 
@@ -128,33 +130,43 @@ confusionMatrix(p2, test$Bloque)
 
 
 #Error rate of Random Forest
+png("./Figuras/plot6.png", width=16, height=7, units = 'in', res=300)
 plot(rf)
+dev.off()
 
 #Tune mtry (Número de variables aleatorias utilizadas en cada árbol)
+png("./Figuras/plot7.png", width=16, height=7, units = 'in', res=300)
 t <- tuneRF(train[,-1], train[,1],
             stepFactor = 0.5,
             plot = TRUE,
             ntreeTry = 5,
             trace = TRUE,
             improve = 0.05)
+t
 #mtry=6
-
+dev.off()
 #No. of nodes for the trees
+png("./Figuras/plot8.png", width=16, height=7, units = 'in', res=300)
 hist(treesize(rf),
      main = "No. of Nodes for the Trees",
      col = "blue")
+dev.off()
 #media de 60 árboles
 
 #Variable Importance
+png("./Figuras/plot9.png", width=16, height=7, units = 'in', res=300)
 varImpPlot(rf,
            sort = T,
            n.var = 10,
            main = "Top 10 - Importancia de Variables")
+dev.off()
+
 importance(rf)
 
 #Partial Dependence Plot
+png("./Figuras/plot10.png", width=16, height=7, units = 'in', res=300)
 partialPlot(rf, train, Y_UTM, "Alta")
-
+dev.off()
 
 
 ###############################Naive Bayes#################################
@@ -169,17 +181,19 @@ library(ggplot2)
 
 
 base_nb <- na.omit(base[,c(2,5,6,7,18,19,22,24,28:30)])
+write.csv(base,"./Bases/base_nb.csv")
 
 #Dplyr
 base_nb$Bloque <- as.factor(base_nb$Bloque)
 table(base_nb$Bloque)
 
-base_nb %>%
+plot11 <- base_nb %>%
   ggplot(aes(x=base_nb$Bloque
              , y=base_nb$Sevmed, fill = base_nb$Bloque)) +
   geom_boxplot() +theme_bw()+stat_summary(fun="mean")+
   ggtitle("Box Plot: Severidad por Transparencia")
-
+plot11
+ggsave(plot=plot11,"./Figuras/plot11.png", width = 16, height=9,dpi=300)
 
 #particion de datos
 set.seed(1234)
@@ -192,7 +206,9 @@ test_nb <- base_nb[ind == 2,]
 nb <- naive_bayes(Bloque ~ ., data = train_nb, usekernel = T) 
 nb 
 
+png("./Figuras/plot12.png", width=16, height=7, units = 'in', res=300)
 plot(nb) 
+dev.off()
 
 #Prediccion
 p <- predict(nb, train_nb, type = 'prob')
@@ -221,6 +237,7 @@ confusionMatrix(p2,test_nb$Bloque)
 library(kknn)
 
 base_knn <- na.omit(base[,c(2,5,6,7,9,10,12,18,19,22,24,28:30,32)])
+write.csv(base,"./Bases/base_knn.csv")
 
 base_knn$Bloque <- as.factor(base_knn$Bloque)
 table(base_knn$Bloque)
@@ -235,6 +252,7 @@ dim(test_knn)[1]
 
 knn <- train.kknn(Bloque~ ., data = train_knn, kmax = 9)
 knn
+
 
 entre <- predict(knn, train_knn[,-1])
 tt  <- table(train_knn[,1],entre)
@@ -266,7 +284,7 @@ confusionMatrix(pred,test_knn$Bloque)
 
 
          ######################Curvas ROC#########################
-
+png("./Figuras/plot13.png", width=16, height=7, units = 'in', res=300)
 par(mfrow = c(1,3))
 
 #Random forest
