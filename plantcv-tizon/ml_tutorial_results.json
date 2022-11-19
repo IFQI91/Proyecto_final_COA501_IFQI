@@ -1,0 +1,1 @@
+{"metadata": {}, "observations": {"default": {"percent_diseased": {"trait": "percent of plant detected to be diseased", "method": "ratio of pixels", "scale": "percent", "datatype": "<class 'float'>", "value": 0.33131874827917723, "label": "percent"}}}}

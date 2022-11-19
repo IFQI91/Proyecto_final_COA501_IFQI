@@ -54,6 +54,43 @@ variables como transparencia de copa, severidad, incidencia, longitud de brotes,
 knitr::include_graphics('./tc.jpg')
 ```
 
+**Variables:**
+
+- Arbol= unidad experimental (UE)
+- Bloque= Transparencia de copa asignada como baja,media y alta
+- Longitud=  distancia en grados, minutos y segundos que hay con respecto al meridiano principal, que es el meridiano de Greenwich (0º) de la UE
+- Latitud= distancia en grados, minutos y segundos que hay con respecto al paralelo principal, que es el ecuador (0º)
+- X_UTM= coordenada X en el sistema de coordenadas universal transversal de Mercator
+- Y_UTM= coordenada Y en el sistema de coordenadas universal transversal de Mercator
+- Altitud= distancia vertical de la UE respecto al nivel del mar
+- AltRan= Rango de Altitud de las UE en dos categorías: Alta y Baja
+- Fungicida= Tratamiento fungicida (Procloraz, Propiconazol o sin fungicida)
+- Nutrimento= Tratamiento fertilizante (Urea, Sulfato de potasio o sin fertilizante)
+- Rep= repetición de la UE por tratamiento en un diseño experimental factorial en bloques generalizados
+- Muestreo= número de muestreo de follaje (se realizaron 6)
+- DDA= días despúes de la aplicación o del establecimiento del experimento
+- Anio= edad del follaje o muestra
+- AcicR= número de acículas retenidas de rama o muestra
+- Abs= Número de cicatrices de acículas de la rama o muestra
+- TotalAc= Total de acículas (AcicR + Abs)
+- Inc= Incidencia del tizón suizo
+- Sevmed= Severidad media del tizón suizo
+- Sevmed= Severidad mínima del tizón suizo
+- Sevmax= Severidad máxima del tizón suizo
+- LonBrot= Longitud de la rama o muestea en centímetros
+- indcol= Índice de colonización (Inc * Sevmed)
+- Afmed= Área media de acícula (Área de acículas en centímetros cuadrados por muestra)
+- Afmax= Área máxima de acícula por muestra
+- Afmin= Área mínima de acícula por muestra
+- Aftotal=  Suma de área de acículas por muestra
+- CA= Abs expresada en porcentaje (Abs*100/TotalAC)
+- RA= RA expresada en porcentaje (RA*100/TotalAC)
+- Color= Categorías de color por cada muestra (Verde claro, verde oscuro y rojizo)
+- trat= Interacción de tratamientos (Fungicida*Nutrimento)
+- ABCPEIC= Área bajo la curva progreso de la enfermedad con el índice de colonización
+
+
+
 ### **1) Base de datos y AED**
 ```{r message=FALSE, warning=FALSE, paged.print=TRUE}
 
@@ -71,22 +108,24 @@ ggpairs(base[,c(5,6,7,18,19,22,24,28:30)],
 
 psych::pairs.panels(base[,c(5,6,7,18,19,22,24,28:30)])
 
-base2<- na.omit(base[,c(14,2,5,6,7,18,19,22,24,28:30)])
+base.pc<- na.omit(base[,c(14,2,5,6,7,18,19,22,24,28:30)])
 
 #Análisis de componentes principales 
-pca <- prcomp(base2[,-c(1,2)], scale = T, center=T)
+pca <- prcomp(base.pc[,-c(1,2)], scale = T, center=T)
 summary(pca)
 
 #biplot
 library(ggplot2)
-  ggplot(base2, aes(x = pca$x[,2], y = pca$x[,1], 
-  colour = as.factor(base2$Anio)))+
-  geom_point(size=3) +
+Edad <- as.factor(base.pc$Anio)
+plot4 <- ggplot(base.pc, aes(x = pca$x[,1], y = pca$x[,2], colour = Edad)) +
+  geom_point(size=3) + xlab("PC1") + ylab("PC2")+
   ggtitle("PCA por Edad del follaje")
+plot4
 
-par(mfrow = c(1,3))
-plot(pca)
 biplot(pca, main="PCA biplot")
+
+par(mfrow = c(1,2))
+plot(pca, main="Sedimentación")
 
 colores <- function(vec){
   # la funci?n rainbow() devuelve un vector que contiene el n?mero de colores distintos
@@ -94,7 +133,7 @@ colores <- function(vec){
   return(col[as.numeric(as.factor(vec))])
 }
 
-plot(pca$x[,c(1, 2)], col = colores(base$Bloque),
+plot(pca$x[,c(1, 2)], col = colores(base.pc$Bloque),
      pch = 19, 
      xlab = "PC1", 
      ylab = "PC2", main="PCA por Transparencia")
@@ -192,11 +231,12 @@ base_nb$Bloque <- as.factor(base_nb$Bloque)
 table(base_nb$Bloque)
 
 base_nb %>%
-  ggplot(aes(x=base_nb$Bloque
-             , y=base_nb$Sevmed, fill = base_nb$Bloque)) +
+  ggplot(aes(x=base_nb$Bloque,
+  y=base_nb$Sevmed, fill = base_nb$Bloque)) +
   geom_boxplot() +theme_bw()+stat_summary(fun="mean")+
-  ggtitle("Box Plot: Severidad por Transparencia")
-
+  ggtitle("Box Plot: Severidad por Transparencia")+
+  xlab("Transparencia de copa") + ylab("Severidad")+
+  theme(legend.position="none")
 
 #particion de datos
 set.seed(1234)
@@ -292,6 +332,7 @@ En general esta técnica no fue tan buena para clasificar la transparencia de co
 
 ```{r message=FALSE, warning=FALSE}
 par(mfrow = c(1,3))
+#Random forest
 
 # Validation set assessment #2: ROC curves and AUC
 # Needs to import ROCR package for ROC curve plotting:
@@ -314,12 +355,12 @@ for (i in 1:3)
   perf <- performance(pred, "tpr", "fpr")
   if (i==1)
   {
-    plot(perf,main="ROC Curve-Random Forest",col=pretty_colours[i])
-    abline (a = 0, b = 1, lty="dotted", lwd=2) 
+    plot(perf,main="ROC Curve-Random Forest",col=pretty_colours[i]) 
   }
   else
   {
-    plot(perf,main="ROC Curve- Random Forest",col=pretty_colours[i],add=TRUE) 
+    plot(perf,main="ROC Curve- Random Forest",col=pretty_colours[i],add=TRUE)
+    abline (a = 0, b = 1, lty="dotted", lwd=2) 
   }
   # Calculate the AUC and print it to screen
   auc.perf <- performance(pred, measure = "auc")
@@ -363,7 +404,6 @@ for (i in 1:3)
 }
 
 
-
 #KNN (ROC)
 
 # Validation set assessment #2: ROC curves and AUC
@@ -395,11 +435,12 @@ for (i in 1:3)
     abline (a = 0, b = 1, lty="dotted", lwd=2) 
   }
   # Calculate the AUC and print it to screen
-  auc.perf <- performance(pred, measure = "auc")
+  auc.perf<- performance(pred, measure = "auc")
   print(auc.perf@y.values)
 }
 
 dev.off()
+
 
 #cuadro con valores de precision
 p <-rbind(c(0.98,0.49,0.53)) 
@@ -415,7 +456,7 @@ pres %>% gt()
 
 ```
 
-**Interpretación:** De acuerdo la evaluación de las curvas ROC, es evidente qu el mejor modelo para clasificar a la transparencia de copa de Douglas-fir fue el Random Forest, ya que tuvo mayor cantidad de positivos verdaderos en comparación de Naive Bayes y K-NN, donde se pueden considera que son modelos de regulares a malos.
+**Interpretación:** De acuerdo la evaluación de las curvas ROC, es evidente qu el mejor modelo para clasificar a la transparencia de copa de Douglas-fir fue el Random Forest, ya que tuvo mayor cantidad de positivos verdaderos en comparación de Naive Bayes y K-NN, donde se pueden considerar que son modelos de regulares a malos.
 
 
 

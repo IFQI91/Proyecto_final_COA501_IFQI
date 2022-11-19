@@ -18,6 +18,12 @@ write.csv(base,"./Bases/base.csv")
 summary(base)
 str(base)
 
+library(DT)
+datatable(base,
+          class="cell border stripe",
+          width="800px",
+          caption="Base de datos")
+
 #matriz de diagramas de dispersion
 png("./Figuras/plot1.png", width=16, height=7, units = 'in', res=300)
 pairs(base[,c(5,6,7,9,10,12,18,19,22,24,28:30,32)],col="blue",pch=23)
@@ -63,9 +69,12 @@ plot.nmds.ggord
 ggsave(plot=plot.nmds.ggord,"./Figuras/plot.nmds.ggord.png", width = 16, height=9,dpi=300)
 
 png("./Figuras/plot5.png", width=16, height=7, units = 'in', res=300)
-par(mfrow = c(1,3))
-plot(pca)
 biplot(pca, main="PCA biplot")
+dev.off()
+
+png("./Figuras/plot6.png", width=16, height=7, units = 'in', res=300)
+par(mfrow = c(1,2))
+plot(pca, main="Sedimentación")
 
 colores <- function(vec){
   # la funci?n rainbow() devuelve un vector que contiene el n?mero de colores distintos
@@ -82,8 +91,9 @@ dev.off()
 
 #biplot
 library(ggplot2)
-plot4 <- ggplot(base.pc, aes(x = pca$x[,2], y = pca$x[,1], colour = as.factor(base.pc$Anio))) +
-  geom_point(size=3) +
+Edad <- as.factor(base.pc$Anio)
+plot4 <- ggplot(base.pc, aes(x = pca$x[,1], y = pca$x[,2], colour = Edad)) +
+  geom_point(size=3) + xlab("PC1") + ylab("PC2")+
   ggtitle("PCA por Edad del follaje")
 plot4
 ggsave(plot=plot4,"./Figuras/plot4.png", width = 16, height=9,dpi=300)
@@ -131,12 +141,12 @@ confusionMatrix(p2, test$Bloque)
 
 
 #Error rate of Random Forest
-png("./Figuras/plot6.png", width=16, height=7, units = 'in', res=300)
+png("./Figuras/plot7.png", width=16, height=7, units = 'in', res=300)
 plot(rf)
 dev.off()
 
 #Tune mtry (Número de variables aleatorias utilizadas en cada árbol)
-png("./Figuras/plot7.png", width=16, height=7, units = 'in', res=300)
+png("./Figuras/plot8.png", width=16, height=7, units = 'in', res=300)
 t <- tuneRF(train[,-1], train[,1],
             stepFactor = 0.5,
             plot = TRUE,
@@ -147,7 +157,7 @@ t
 #mtry=6
 dev.off()
 #No. of nodes for the trees
-png("./Figuras/plot8.png", width=16, height=7, units = 'in', res=300)
+png("./Figuras/plot9.png", width=16, height=7, units = 'in', res=300)
 hist(treesize(rf),
      main = "No. of Nodes for the Trees",
      col = "blue")
@@ -155,7 +165,7 @@ dev.off()
 #media de 60 árboles
 
 #Variable Importance
-png("./Figuras/plot9.png", width=16, height=7, units = 'in', res=300)
+png("./Figuras/plot10.png", width=16, height=7, units = 'in', res=300)
 varImpPlot(rf,
            sort = T,
            n.var = 10,
@@ -165,7 +175,7 @@ dev.off()
 importance(rf)
 
 #Partial Dependence Plot
-png("./Figuras/plot10.png", width=16, height=7, units = 'in', res=300)
+png("./Figuras/plot11.png", width=16, height=7, units = 'in', res=300)
 partialPlot(rf, train, Y_UTM, "Alta")
 dev.off()
 
@@ -188,13 +198,16 @@ write.csv(base,"./Bases/base_nb.csv")
 base_nb$Bloque <- as.factor(base_nb$Bloque)
 table(base_nb$Bloque)
 
-plot11 <- base_nb %>%
+
+plot12 <- base_nb %>%
   ggplot(aes(x=base_nb$Bloque
              , y=base_nb$Sevmed, fill = base_nb$Bloque)) +
   geom_boxplot() +theme_bw()+stat_summary(fun="mean")+
-  ggtitle("Box Plot: Severidad por Transparencia")
-plot11
-ggsave(plot=plot11,"./Figuras/plot11.png", width = 16, height=9,dpi=300)
+  ggtitle("Box Plot: Severidad por Transparencia")+
+  xlab("Transparencia de copa") + ylab("Severidad")+
+  theme(legend.position="none")
+plot12
+ggsave(plot=plot12,"./Figuras/plot12.png", width = 16, height=9,dpi=300)
 
 #particion de datos
 set.seed(1234)
@@ -207,7 +220,7 @@ test_nb <- base_nb[ind == 2,]
 nb <- naive_bayes(Bloque ~ ., data = train_nb, usekernel = T) 
 nb 
 
-png("./Figuras/plot12.png", width=16, height=7, units = 'in', res=300)
+png("./Figuras/plot13.png", width=16, height=7, units = 'in', res=300)
 plot(nb) 
 dev.off()
 
@@ -285,7 +298,7 @@ confusionMatrix(pred,test_knn$Bloque)
 
 
          ######################Curvas ROC#########################
-png("./Figuras/plot13.png", width=16, height=7, units = 'in', res=300)
+png("./Figuras/plot14.png", width=16, height=7, units = 'in', res=300)
 par(mfrow = c(1,3))
 
 #Random forest
@@ -358,8 +371,6 @@ for (i in 1:3)
   auc.perf <- performance(pred, measure = "auc")
   print(auc.perf@y.values)
 }
-
-
 
 #KNN (ROC)
 

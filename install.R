@@ -1,5 +1,5 @@
 install.packages(c('GGally','randomForest','caret','naivebayes',
-            'caret','ROCR','psych'))
+            'ROCR','psych','DT'))
 
 install.packages("kknn")            
 install.packages("tidyverse")
@@ -7,7 +7,7 @@ install.packages("rmarkdown")
 
 
 
-
+#Opciones para instalar librerias
 #install.packages("/home/jovyan/kknn_1.3.1.tar.gz", repos = NULL, type = "source")
 #install.packages("githubinstall")
 #library(githubinstall)
