@@ -1,13 +1,2 @@
-jupyterlab >=1.0
-opencv-python-headless
-scipy
-pillow
-pandas
-peakutils
-matplotlib
-seaborn
-plotly
-psutil
-imgkit
-xvfbwrapper
-numpy
+matplotlib==3.0.3
+opencv_contrib_python==4.2.0.32
