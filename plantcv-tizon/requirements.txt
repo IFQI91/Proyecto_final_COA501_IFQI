@@ -1,0 +1,5 @@
+matplotlib==3.0.3
+opencv_contrib_python==4.2.0.32
+plantcv==3.12.1
+numpy
+pandas
