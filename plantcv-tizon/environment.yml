@@ -14,3 +14,4 @@ dependencies:
   - theano
   - keras==2.1.5
   - mkl-service==1.1.2
+  - plantcv==3.12.1
