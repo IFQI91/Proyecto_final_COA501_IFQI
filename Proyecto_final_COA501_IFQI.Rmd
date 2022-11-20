@@ -3,11 +3,6 @@ title: '**Proyecto final**'
 author: \textcolor[HTML]{08106E}{Iván F. Quiroz Ibáñez}^[IFIT-CP, quiroz.ivan@colpos.mx]
 date: "`r format(Sys.time(), '%d % de %B % de %Y')`"
 output:
-  pdf_document:
-    includes:
-      in_header: header.tex
-  word_document:
-    toc: no
   html_document:
     toc: yes
     toc_float: yes
@@ -15,6 +10,11 @@ output:
     theme: journal
     fig_caption: yes
     code_folding: show
+  word_document:
+    toc: no
+  pdf_document:
+    includes:
+      in_header: header.tex
 language: es-MX
 subtitle: COA-501 Herramientas de cómputo para investigadores (R y Python)
 ---
@@ -48,7 +48,7 @@ base$AltRan <- as.factor(base$AltRan)
 ### **0) Estudio de caso**
 Se cuenta con la base de datos de un experimento realizado en Puebla, dónde se evaluaron los efectos de fertilizantes y plaguicidas contra una enfermedad foliar
 conocida como tizón suizo en árboles de navidad de la especie Douglas-fir. Se tomaron
-variables como transparencia de copa, severidad, incidencia, longitud de brotes, área de áciculas, etc. El objetivo del análisis es determinar la mejor técnica de machine learning o aprendizaje automático (Naive Bayes, K-NN y Random Forest) para clasificar la transparencia de copa en Douglas-fir.
+variables como transparencia de copa, severidad, incidencia, longitud de brotes, área de acículas, etc. El objetivo del análisis es determinar la mejor técnica de machine learning o aprendizaje automático (Naive Bayes, K-NN y Random Forest) para clasificar la transparencia de copa en Douglas-fir.
 
 ```{r echo=FALSE, out.width='60%', out.height="40%",fig.show='hold',fig.align ='center'}
 knitr::include_graphics('./tc.jpg')
@@ -251,7 +251,7 @@ test_nb <- base_nb[ind == 2,]
 nb <- naive_bayes(Bloque ~ ., data = train_nb, usekernel = T) 
 nb 
 
-plot(nb) 
+#plot(nb) 
 
 #Prediccion
 p <- predict(nb, train_nb, type = 'prob')
@@ -458,7 +458,7 @@ pres %>% gt()
 
 ```
 
-**Interpretación:** De acuerdo la evaluación de las curvas ROC, es evidente qu el mejor modelo para clasificar a la transparencia de copa de Douglas-fir fue el Random Forest, ya que tuvo mayor cantidad de positivos verdaderos en comparación de Naive Bayes y K-NN, donde se pueden considerar que son modelos de regulares a malos.
+**Interpretación:** De acuerdo la evaluación de las curvas ROC, es evidente qu el mejor modelo para clasificar a la transparencia de copa de Douglas-fir fue Random Forest, ya que tuvo mayor cantidad de positivos verdaderos en comparación de Naive Bayes y K-NN, donde se pueden considerar que son modelos de regulares a malos.
 
 
 

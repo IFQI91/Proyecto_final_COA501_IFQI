@@ -15,6 +15,8 @@ dir()
 
 base <- read.csv("ABCPE_MIXTO_B1_R_coordenadas.csv")
 write.csv(base,"./Bases/base.csv")
+write.table(base,"./Bases/base.txt")
+
 summary(base)
 str(base)
 
@@ -43,6 +45,7 @@ dev.off()
 
 base.pc<- na.omit(base[,c(14,2,5,6,7,18,19,22,24,28:30)])
 write.csv(base.pc,"./Bases/base.pc.csv")
+write.table(base.pc,"./Bases/base.pc.txt")
 
 #Análisis de componentes principales 
 pca <- prcomp(base.pc[,-c(1,2)], scale = T, center=T)
@@ -108,6 +111,7 @@ str(base)
 
 base_rf <- na.omit(base[,c(2,5,6,7,18,19,22,24,28:30)])
 write.csv(base,"./Bases/base_rf.csv")
+write.table(base,"./Bases/base_rf.txt")
 base_rf$Bloque <- as.factor(base_rf$Bloque)
 table(base_rf$Bloque)
 
@@ -193,6 +197,7 @@ library(ggplot2)
 
 base_nb <- na.omit(base[,c(2,5,6,7,18,19,22,24,28:30)])
 write.csv(base,"./Bases/base_nb.csv")
+write.table(base,"./Bases/base_nb.txt")
 
 #Dplyr
 base_nb$Bloque <- as.factor(base_nb$Bloque)
@@ -220,9 +225,8 @@ test_nb <- base_nb[ind == 2,]
 nb <- naive_bayes(Bloque ~ ., data = train_nb, usekernel = T) 
 nb 
 
-png("./Figuras/plot13.png", width=16, height=7, units = 'in', res=300)
-plot(nb) 
-dev.off()
+
+plot(nb)
 
 #Prediccion
 p <- predict(nb, train_nb, type = 'prob')
@@ -252,6 +256,7 @@ library(kknn)
 
 base_knn <- na.omit(base[,c(2,5,6,7,9,10,12,18,19,22,24,28:30,32)])
 write.csv(base,"./Bases/base_knn.csv")
+write.table(base,"./Bases/base_knn.txt")
 
 base_knn$Bloque <- as.factor(base_knn$Bloque)
 table(base_knn$Bloque)
@@ -298,7 +303,7 @@ confusionMatrix(pred,test_knn$Bloque)
 
 
          ######################Curvas ROC#########################
-png("./Figuras/plot14.png", width=16, height=7, units = 'in', res=300)
+png("./Figuras/plot13.png", width=16, height=7, units = 'in', res=300)
 par(mfrow = c(1,3))
 
 #Random forest
