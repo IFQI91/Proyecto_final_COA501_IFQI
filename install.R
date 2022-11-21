@@ -1,5 +1,5 @@
 install.packages(c('GGally','randomForest','caret','naivebayes',
-            'ROCR','psych','DT'))
+            'ROCR','psych','DT','vegan'))
 
 install.packages("kknn")            
 install.packages("tidyverse")
