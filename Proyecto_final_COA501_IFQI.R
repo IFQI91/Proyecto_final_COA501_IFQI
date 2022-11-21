@@ -9,11 +9,12 @@ rm(list = ls())
 dir()
 #dir.create("Figuras")
 #dir.create("Bases")
-#dir.create("Presentación")
+#dir.create("Script")
+#dir.create("Imagenes")
+#dir.create("Word")
 
 
-
-base <- read.csv("ABCPE_MIXTO_B1_R_coordenadas.csv")
+base <- read.csv("./Bases/ABCPE_MIXTO_B1_R_coordenadas.csv")
 write.csv(base,"./Bases/base.csv")
 write.table(base,"./Bases/base.txt")
 
