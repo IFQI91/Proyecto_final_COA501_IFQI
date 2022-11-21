@@ -460,6 +460,6 @@ pres %>% gt()
 
 **Interpretación:** De acuerdo la evaluación de las curvas ROC, es evidente qu el mejor modelo para clasificar a la transparencia de copa de Douglas-fir fue Random Forest, ya que tuvo mayor cantidad de positivos verdaderos en comparación de Naive Bayes y K-NN, donde se pueden considerar que son modelos de regulares a malos.
 
-
+**Conclusiones:** De acuerdo la evaluación de las curvas ROC, precisión y valor de kappa, es evidente que el mejor modelo para clasificar a la transparencia de copa de Douglas-fir fue Random Forest, además tuvo mayor cantidad de positivos verdaderos con sensibilidad, especificidad y precisión equilibrada en comparación de Naive Bayes y K-NN, donde se pueden considerar que son modelos de regulares a malos para clasificar la transparencia de copa.
 
 
