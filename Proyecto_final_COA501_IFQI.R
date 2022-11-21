@@ -24,7 +24,7 @@ str(base)
 library(DT)
 datatable(base,
           class="cell border stripe",
-          width="800px",
+          width="800px",filter="top",
           caption="Base de datos")
 
 #matriz de diagramas de dispersion
