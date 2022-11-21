@@ -3,5 +3,3 @@ opencv_contrib_python==4.2.0.32
 plantcv
 numpy
 pandas
-sas_kernel
-saspy
