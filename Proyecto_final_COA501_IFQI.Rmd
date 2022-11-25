@@ -1,5 +1,5 @@
 ---
-title: '**Proyecto final**'
+title: '**Proyecto final COA-501**'
 author: \textcolor[HTML]{08106E}{Iván F. Quiroz Ibáñez}^[IFIT-CP, quiroz.ivan@colpos.mx]
 date: "`r format(Sys.time(), '%d % de %B % de %Y')`"
 output:
