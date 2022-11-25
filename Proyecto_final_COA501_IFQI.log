@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.4)  21 NOV 2022 01:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.4)  25 NOV 2022 13:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -655,20 +655,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
 [8 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-4.pdf>]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 442.
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 446.
+(c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 <Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-6.pdf, id=115, 469.755pt x 325.215pt>
 File: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-6.pdf Graphic file (type pdf)
 <use Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-6.pdf>
-Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-6.pdf  used on input line 455.
+Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-6.pdf  used on input line 462.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 457.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 464.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 457.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 464.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -678,13 +680,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
 [9 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-5.pdf>]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 476.
+<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-7.pdf, id=128, 469.755pt x 325.215pt>
+File: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-7.pdf Graphic file (type pdf)
+<use Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-7.pdf>
+Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-7.pdf  used on input line 489.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 497.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 491.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 497.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 491.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -696,11 +705,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [10 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-6.pdf>]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 566.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 531.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 566.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 531.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -709,14 +718,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
-[11]
+[11 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-3-7.pdf>]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 635.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 600.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 635.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 600.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -726,18 +735,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
 [12]
-<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-1.pdf, id=150, 469.755pt x 325.215pt>
+File: ./Imagenes/logo_colpos.png Graphic file (type png)
+<use ./Imagenes/logo_colpos.png>
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 669.
+(pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
+File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
+<use ./Imagenes/logo_fitosanidad.png>
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 669.
+(pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.13695pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.13695pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
+
+[13]
+<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-1.pdf, id=165, 469.755pt x 325.215pt>
 File: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 <use Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-1.pdf>
-Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-1.pdf  used on input line 670.
+Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-1.pdf  used on input line 704.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 682.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 716.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 682.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 716.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -746,19 +771,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
-[13 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-1.pdf>]
-<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-2.pdf, id=164, 469.755pt x 325.215pt>
+[14 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-1.pdf>]
+<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-2.pdf, id=177, 469.755pt x 325.215pt>
 File: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-2.pdf Graphic file (type pdf)
 <use Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-2.pdf>
-Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-2.pdf  used on input line 700.
+Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-2.pdf  used on input line 734.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 711.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 745.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 711.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 745.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -767,24 +792,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
-[14 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-2.pdf>]
-<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-3.pdf, id=175, 469.755pt x 325.215pt>
+[15 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-2.pdf>]
+<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-3.pdf, id=188, 469.755pt x 325.215pt>
 File: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-3.pdf Graphic file (type pdf)
 <use Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-3.pdf>
-Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-3.pdf  used on input line 713.
+Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-3.pdf  used on input line 747.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-4.pdf, id=176, 469.755pt x 325.215pt>
+<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-4.pdf, id=189, 469.755pt x 325.215pt>
 File: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-4.pdf Graphic file (type pdf)
 <use Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-4.pdf>
-Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-4.pdf  used on input line 727.
+Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-4.pdf  used on input line 761.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 729.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 763.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 729.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 763.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -793,28 +818,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
-[15 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-3.pdf>]
-<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-5.pdf, id=188, 469.755pt x 325.215pt>
+[16 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-3.pdf>]
+<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-5.pdf, id=201, 469.755pt x 325.215pt>
 File: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-5.pdf Graphic file (type pdf)
 <use Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-5.pdf>
-Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-5.pdf  used on input line 756.
+Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-5.pdf  used on input line 790.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 758.
+(Font)              <10> on input line 792.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 758.
+(Font)              <7> on input line 792.
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--761
+Underfull \hbox (badness 10000) in paragraph at lines 790--795
 [][]
  []
 
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 761.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 795.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 761.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 795.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -823,14 +848,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
-[16 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-4.pdf>]
+[17 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-4.pdf>]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 791.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 825.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 791.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 825.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -839,19 +864,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
-[17 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-5.pdf>]
-<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-5-1.pdf, id=213, 469.755pt x 325.215pt>
+[18 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-4-5.pdf>]
+<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-5-1.pdf, id=226, 469.755pt x 325.215pt>
 File: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 <use Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-5-1.pdf>
-Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 803.
+Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 837.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1102.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1136.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1102.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1136.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -860,30 +885,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
-[18 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-5-1.pdf>]
+[19 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-5-1.pdf>]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1102.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1136.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1102.
-(pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 33.13695pt, for example:
-(fancyhdr)                \setlength{\headheight}{33.13695pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
-
-[19]
-File: ./Imagenes/logo_colpos.png Graphic file (type png)
-<use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1102.
-(pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
-File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
-<use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1102.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1136.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -895,11 +904,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [20]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1102.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1136.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1102.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1136.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -911,11 +920,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [21]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1102.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1136.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1102.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1136.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -927,11 +936,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [22]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1102.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1136.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1102.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1136.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -941,17 +950,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
 [23]
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 1109.
-(c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1177.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1136.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1177.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1136.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -963,11 +968,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [24]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1247.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1211.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1247.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1211.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -979,11 +984,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [25]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1323.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1281.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1323.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1281.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -995,11 +1000,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [26]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1417.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1357.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1417.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1357.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1011,11 +1016,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [27]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1466.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1451.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1466.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1451.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1027,11 +1032,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [28]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1516.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1500.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1516.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1500.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1041,18 +1046,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
 [29]
-<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-7-1.pdf, id=284, 469.755pt x 325.215pt>
-File: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
-<use Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-7-1.pdf>
-Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-7-1.pdf  used on input line 1568.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1570.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1550.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1570.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1550.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1062,13 +1062,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
 [30]
+<Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-7-1.pdf, id=297, 469.755pt x 325.215pt>
+File: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
+<use Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-7-1.pdf>
+Package pdftex.def Info: Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-7-1.pdf  used on input line 1602.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1616.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1604.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1616.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1604.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1077,14 +1082,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
-[31 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-7-1.pdf>]
+[31]
 File: ./Imagenes/logo_colpos.png Graphic file (type png)
 <use ./Imagenes/logo_colpos.png>
-Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1632.
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1650.
 (pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
 File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
 <use ./Imagenes/logo_fitosanidad.png>
-Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1632.
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1650.
 (pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1093,23 +1098,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
 
-[32] (./Proyecto_final_COA501_IFQI.aux)
+[32 <./Proyecto_final_COA501_IFQI_files/figure-latex/unnamed-chunk-7-1.pdf>]
+File: ./Imagenes/logo_colpos.png Graphic file (type png)
+<use ./Imagenes/logo_colpos.png>
+Package pdftex.def Info: ./Imagenes/logo_colpos.png  used on input line 1666.
+(pdftex.def)             Requested size: 23.4855pt x 21.13695pt.
+File: ./Imagenes/logo_fitosanidad.png Graphic file (type png)
+<use ./Imagenes/logo_fitosanidad.png>
+Package pdftex.def Info: ./Imagenes/logo_fitosanidad.png  used on input line 1666.
+(pdftex.def)             Requested size: 14.08377pt x 20.32124pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 33.13695pt, for example:
+(fancyhdr)                \setlength{\headheight}{33.13695pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-21.13695pt}.
+
+[33] (./Proyecto_final_COA501_IFQI.aux)
 Package rerunfilecheck Info: File `Proyecto_final_COA501_IFQI.out' has not changed.
 (rerunfilecheck)             Checksum: EB81CEBC8E208DB8D79F41997E21C70E;972.
  ) 
 Here is how much of TeX's memory you used:
- 13282 strings out of 476913
- 218955 string characters out of 5822911
+ 13290 strings out of 476913
+ 219440 string characters out of 5822911
  568936 words of memory out of 5000000
- 34258 multiletter control sequences out of 15000+600000
+ 34264 multiletter control sequences out of 15000+600000
  521165 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  72i,15n,77p,547b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on Proyecto_final_COA501_IFQI.pdf (32 pages, 8083455 bytes).
+{c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/Users/ifqi9/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
+Output written on Proyecto_final_COA501_IFQI.pdf (33 pages, 8126102 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 390 PDF objects out of 1000 (max. 8388607)
+ 293 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

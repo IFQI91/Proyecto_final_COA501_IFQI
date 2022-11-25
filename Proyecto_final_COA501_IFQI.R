@@ -116,7 +116,7 @@ p=autoplot(pca_res, data = base.pc, colour ='Bloque', scale=0,
            loadings.label= TRUE, loadings.label.repel=TRUE, loadings.label.size = 3.5,
            loadings.label.colour="blue",
            loadings.label.vjust = 1.3,loadings.label.hjust=0)+
-  theme()+labs(colour = "Transparencia de copa",shape="Age")+
+  theme()+labs(colour = "Transparencia de copa")+
   theme(axis.title = element_text(family = "Arial", face="bold", size=10.5))+
   theme(legend.position = "right",legend.box = "vertical")+
   theme(legend.title = element_text(colour="black", size=10.5, 
