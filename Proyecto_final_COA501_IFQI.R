@@ -102,6 +102,34 @@ plot4 <- ggplot(base.pc, aes(x = pca$x[,1], y = pca$x[,2], colour = Edad)) +
 plot4
 ggsave(plot=plot4,"./Figuras/plot4.png", width = 16, height=9,dpi=300)
 
+
+
+#PCA-Biplot con variables categ?ricas en ggplot2
+library(ggfortify)
+library(ggplot2)
+library(ggrepel)
+pca_res <- pca
+
+#Grafica Biplot, Centroides, vectores, factores 
+
+p=autoplot(pca_res, data = base.pc, colour ='Bloque', scale=0,
+           loadings = TRUE, loadings.colour = 'black',
+           loadings.label= TRUE, loadings.label.repel=TRUE, loadings.label.size = 3.5,
+           loadings.label.colour="blue",
+           loadings.label.vjust = 1.3,loadings.label.hjust=0)+
+  theme()+labs(colour = "Transparencia de copa",shape="Age")+
+  theme(axis.title = element_text(family = "Arial", face="bold", size=10.5))+
+  theme(legend.position = "right",legend.box = "vertical")+
+  theme(legend.title = element_text(colour="black", size=10.5, 
+                                    face="bold"),
+        plot.background = element_rect(fill = "white"))+
+  guides(color=guide_legend(override.aes=list(shape=15,size=5)),
+         shape=guide_legend(override.aes=list(size=5)))+
+  theme(legend.key=element_blank())+
+  scale_x_continuous("PC1 (30.45%)")+scale_y_continuous("PC2 (23.09%)")
+  
+ggsave(plot=p,"./Figuras/plot_ggfortify.png", width = 16, height=9,dpi=300)
+
   ###########################Random Forest################################
 
 library(randomForest)
