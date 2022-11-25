@@ -107,7 +107,6 @@ ggsave(plot=plot4,"./Figuras/plot4.png", width = 16, height=9,dpi=300)
 #PCA-Biplot con variables categ?ricas en ggplot2
 library(ggfortify)
 library(ggplot2)
-library(ggrepel)
 pca_res <- pca
 
 #Grafica Biplot, Centroides, vectores, factores 
